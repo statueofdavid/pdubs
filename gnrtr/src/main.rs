@@ -6,5 +6,5 @@ use rand::prelude::*;
 
 fn main() {
     let pw: char = random();
-    println!(password)
+    println!("{}", pw)
 }
