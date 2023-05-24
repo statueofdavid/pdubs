@@ -5,6 +5,15 @@ use rand::prelude::*;
  */
 
 fn main() {
-    let pw: char = random();
-    println!("{}", pw)
+    let mut pw = Vec::new();
+    
+    for _ in 0..12 {
+        let mut rng = rand::thread_rng();
+        let random_symbol: char = rng.gen_range('\u{0020}'..'\u{007E}'); 
+        pw.push(random_symbol);
+    }
+
+    let s_pw = pw.into_iter().collect::<String>();
+
+    println!("{}", s_pw.trim());
 }
