@@ -2,7 +2,7 @@
 a password manager from scratch #ThanksWeirdAl
 
 expected features:
-1. a generator
+1. a generator - poc in develop
 2. a vault
 3. encryption?
 -----
