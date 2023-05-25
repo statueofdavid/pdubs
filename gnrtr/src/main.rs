@@ -9,7 +9,11 @@ fn main() {
     
     for _ in 0..12 {
         let mut rng = rand::thread_rng();
-        let random_symbol: char = rng.gen_range('\u{0020}'..'\u{007E}'); 
+        let random_symbol: char = rng.gen_range('\u{0020}'..'\u{007E}');
+
+        while random_symbol == '\u{0020}' {
+            let random_symbol: char = rng.gen_range('\u{0020}'..'\u{007E}');
+        }
         pw.push(random_symbol);
     }
 
