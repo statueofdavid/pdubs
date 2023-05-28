@@ -18,7 +18,7 @@ fn gen_rand_char_not_space() -> char {
 fn main() {
     let mut pw = Vec::new();
 
-    for _ in 0..12 {
+    for _ in 0..24 {
         pw.push(gen_rand_char_not_space());
     }
 
